@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    font-size: 80px;
+    color: white;
+}
+
+.first-div {
+    display: flex;
+    background-color: black;
+    margin: 30px 90px 90px;
+    border-radius: 10px;
+}
+
+.top-banner {
+    width: 50%;
+    padding: 40px 0 100px 40px;
+    padding-left: 40px;
+    height: 200px;
+}
+
+.top-player img {
+    height: 600px;
+    width: 80%;
+    margin-left: 60px;
+    margin-bottom: 80px;
+}
+
+.link-button {
+    background-color: red;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+
+}
+
+/* 
+
+main section  */
+main {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.side-menu {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+
+
+    padding: 30px 0px;
+    border-radius: 5px;
+
+}
+
+.side-menu .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+}
+
+.side-menu a:hover {
+    background-color: red;
+    color: white;
+}
+
+.main-container{
+    display:grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 30px;
+}
+
+.container {
+    height: 250PX;
+    width: 300px;
+    border: 1px solid #E8E8E8;
+}
+
+.blog-img {
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.country{
+    margin: 20px 25px;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+    padding: 80px;
+   margin-top: 100px;
+}
+
+footer h1 {
+    text-align: center;
+
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.others-options {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 0 60px 0;
+}
+
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .first-div{
+       grid-template-columns: repeat(1, 1fr);
+       flex-direction: column;
+       width: 100%;
+    }   
+    }
+
+
+    /* mobile devices */
+    @media screen and (max-width:800px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
