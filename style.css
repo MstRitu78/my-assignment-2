@@ -41,7 +41,7 @@ body {
 /* 
 
 main section  */
-main {
+.mainn {
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -81,7 +81,7 @@ main {
 
 .blogs {
     display: grid;
-    gap: 30px;
+    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -95,7 +95,7 @@ main {
     width: 100%;
 }
 
-footer {
+.footer {
     background-color: black;
     color: white;
     height: 200px;
@@ -103,7 +103,7 @@ footer {
    margin-top: 100px;
 }
 
-footer h1 {
+.footer h1 {
     text-align: center;
 
 }
@@ -120,20 +120,59 @@ hr {
     justify-content: space-evenly;
     padding: 0 60px 0;
 }
+.div-last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 25px;
+    
+}
+.div-last i {
+    color: white;
+    font-size: 35px;
+
+}
 
 
 /* tablet devices */
-@media only screen and (min-width: 688px) and (max-width:992px) {
-    .first-div{
-       grid-template-columns: repeat(1, 1fr);
-       flex-direction: column;
-       width: 100%;
+@media  screen and (min-width: 801px) and (max-width:992px) {
+    ..blogs{
+       
+       display: grid;
+       grid-template-columns: repeat(1, 2fr);
+       
     }   
     }
 
 
     /* mobile devices */
     @media screen and (max-width:800px) {
-        grid-template-columns: repeat(1, 1fr);
+       .first-div{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+
+       }
+       .header{font-size: 3vw;}
+       .mainn{
+        flex-direction: column;
+        align-items: center;
+        margin: 15px;
+
+       }
+       .blogs{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+       }
+      
+
+ 
+        
+
+
+        
     }
     
